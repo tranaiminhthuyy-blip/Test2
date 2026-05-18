@@ -4,21 +4,21 @@
 
 This repository contains datasets, supporting documents, and utility scripts for supply chain and logistics analysis.
 
-Large files are hosted externally on Google Drive to avoid GitHub file-size limitations.
+Large datasets and documents are distributed through GitHub Releases to improve accessibility and compatibility with AI/data-analysis workflows.
 
 ---
 
-## Google Drive Resources
+## Dataset Download
 
-All datasets and project resources are available here:
+Datasets and supporting resources are available in GitHub Releases:
 
-https://drive.google.com/drive/folders/15cM6Z5eYqmUxqRdDTIkdYdjJrgPOwlMD?usp=sharing
+https://github.com/tranaiminhthuyy-blip/Test2/releases
 
 ---
 
-## Available Datasets
+## Available Files
 
-### CSV Files
+### CSV Datasets
 - TransferCost.csv
 - STO.csv
 - ProductMaster.csv
@@ -46,7 +46,7 @@ Test2/
 ├── README.md
 ├── load_data.py
 ├── metadata.json
-└── project resources
+└── datasets.zip (via GitHub Releases)
 ```
 
 ---
@@ -61,13 +61,13 @@ git clone https://github.com/tranaiminhthuyy-blip/Test2.git
 
 ### 2. Download datasets
 
-Download all CSV files from the Google Drive folder.
+Download `datasets.zip` from GitHub Releases.
 
-### 3. Place files
+### 3. Extract files
 
-Put all CSV files in the same directory as `load_data.py`.
+Extract all CSV files into the same folder as `load_data.py`.
 
-### 4. Run
+### 4. Run loader
 
 ```bash
 python load_data.py
@@ -77,6 +77,6 @@ python load_data.py
 
 ## Notes
 
-- Large files are stored externally on Google Drive.
-- Ensure Google Drive links remain public ("Anyone with the link").
-- Repository is intended for educational and research purposes.
+- Datasets are stored externally through GitHub Releases.
+- Repository is intended for educational, analytics, and research purposes.
+- CSV files should remain in the same directory as `load_data.py`.
