@@ -2,7 +2,7 @@ import pandas as pd
 from pathlib import Path
 
 # =========================================================
-# Configuration
+# CONFIGURATION
 # =========================================================
 
 DATA_FOLDER = Path(".")
@@ -19,13 +19,13 @@ CSV_FILES = {
 }
 
 # =========================================================
-# Load datasets
+# LOAD DATASETS
 # =========================================================
 
 datasets = {}
 
 print("=" * 60)
-print("LOADING DATASETS")
+print("SUPPLY CHAIN DATA LOADER")
 print("=" * 60)
 
 for dataset_name, file_name in CSV_FILES.items():
@@ -39,10 +39,12 @@ for dataset_name, file_name in CSV_FILES.items():
 
         print(f"\n[SUCCESS] {dataset_name}")
         print(f"File: {file_name}")
-        print(f"Shape: {df.shape}")
+        print(f"Rows: {df.shape[0]}")
+        print(f"Columns: {df.shape[1]}")
 
-        print("\nColumns:")
-        print(list(df.columns))
+        print("\nColumn Names:")
+        for col in df.columns:
+            print(f"- {col}")
 
         print("\nPreview:")
         print(df.head(3))
@@ -50,14 +52,14 @@ for dataset_name, file_name in CSV_FILES.items():
         print("-" * 60)
 
     except FileNotFoundError:
-        print(f"\n[ERROR] File not found: {file_name}")
+        print(f"\n[ERROR] Missing file: {file_name}")
 
     except Exception as e:
-        print(f"\n[ERROR] Failed to load {file_name}")
+        print(f"\n[ERROR] Failed to load: {file_name}")
         print(f"Reason: {e}")
 
 # =========================================================
-# Summary
+# SUMMARY
 # =========================================================
 
 print("\n")
@@ -68,4 +70,4 @@ print("=" * 60)
 for name, df in datasets.items():
     print(f"{name}: {df.shape[0]} rows x {df.shape[1]} columns")
 
-print("\nAll available datasets loaded successfully.")
+print("\nFinished loading available datasets.")
