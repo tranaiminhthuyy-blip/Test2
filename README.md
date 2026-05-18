@@ -2,23 +2,23 @@
 
 ## Overview
 
-This repository contains datasets, cost parameters, supporting documents, and project resources for supply chain / logistics analysis.
+This repository contains datasets, supporting documents, and utility scripts for supply chain and logistics analysis.
 
-Large files and supporting materials are hosted on Google Drive.
+Large files are hosted externally on Google Drive to avoid GitHub file-size limitations.
 
 ---
 
-## Google Drive Folder
+## Google Drive Resources
 
-All project resources are available here:
+All datasets and project resources are available here:
 
 https://drive.google.com/drive/folders/15cM6Z5eYqmUxqRdDTIkdYdjJrgPOwlMD?usp=sharing
 
 ---
 
-## Available Files
+## Available Datasets
 
-### CSV Datasets
+### CSV Files
 - TransferCost.csv
 - STO.csv
 - ProductMaster.csv
@@ -44,8 +44,8 @@ https://drive.google.com/drive/folders/15cM6Z5eYqmUxqRdDTIkdYdjJrgPOwlMD?usp=sha
 Test2/
 │
 ├── README.md
-├── metadata.json
 ├── load_data.py
+├── metadata.json
 └── project resources
 ```
 
@@ -53,13 +53,21 @@ Test2/
 
 ## Usage
 
-Clone repository:
+### 1. Clone repository
 
 ```bash
 git clone https://github.com/tranaiminhthuyy-blip/Test2.git
 ```
 
-Run Python script:
+### 2. Download datasets
+
+Download all CSV files from the Google Drive folder.
+
+### 3. Place files
+
+Put all CSV files in the same directory as `load_data.py`.
+
+### 4. Run
 
 ```bash
 python load_data.py
@@ -69,6 +77,6 @@ python load_data.py
 
 ## Notes
 
-- Large datasets and documents are stored on Google Drive.
-- Ensure Google Drive sharing remains public ("Anyone with the link").
-- Repository is intended for research, analytics, and educational purposes.
+- Large files are stored externally on Google Drive.
+- Ensure Google Drive links remain public ("Anyone with the link").
+- Repository is intended for educational and research purposes.
