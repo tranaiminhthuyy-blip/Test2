@@ -1,80 +1,30 @@
 {
-  "file_name": "data.csv.gz",
-  "rows": 18149619,
-  "columns": 7,
-  "column_names": [
-    "Date",
-    "OriginID",
-    "DestinationID",
-    "ProductID",
-    "Type",
-    "DemandInPCS",
-    "ValueInIDR"
-  ],
-  "dtypes": {
-    "Date": "object",
-    "OriginID": "object",
-    "DestinationID": "object",
-    "ProductID": "int64",
-    "Type": "object",
-    "DemandInPCS": "float64",
-    "ValueInIDR": "float64"
+  "project_name": "Test2",
+  "domain": "Supply Chain and Logistics",
+  "repository": "https://github.com/tranaiminhthuyy-blip/Test2",
+  "storage": {
+    "type": "Google Drive",
+    "link": "https://drive.google.com/drive/folders/15cM6Z5eYqmUxqRdDTIkdYdjJrgPOwlMD?usp=sharing"
   },
-  "missing_values": {
-    "Date": 0,
-    "OriginID": 0,
-    "DestinationID": 0,
-    "ProductID": 0,
-    "Type": 0,
-    "DemandInPCS": 0,
-    "ValueInIDR": 0
-  },
-  "sample_rows": [
-    {
-      "Date": "2025-07-09",
-      "OriginID": "D42",
-      "DestinationID": "Bandung Barat-Jawa Barat",
-      "ProductID": 7233,
-      "Type": "B2C",
-      "DemandInPCS": 1.265,
-      "ValueInIDR": 30630.63063063063
-    },
-    {
-      "Date": "2025-07-09",
-      "OriginID": "D42",
-      "DestinationID": "Bandung-Jawa Barat",
-      "ProductID": 7233,
-      "Type": "B2C",
-      "DemandInPCS": 6.325,
-      "ValueInIDR": 153153.15315315314
-    },
-    {
-      "Date": "2025-07-09",
-      "OriginID": "D42",
-      "DestinationID": "Banyumas-Jawa Tengah",
-      "ProductID": 7233,
-      "Type": "B2C",
-      "DemandInPCS": 1.265,
-      "ValueInIDR": 30630.63063063063
-    },
-    {
-      "Date": "2025-07-09",
-      "OriginID": "D42",
-      "DestinationID": "Bekasi-Jawa Barat",
-      "ProductID": 7233,
-      "Type": "B2C",
-      "DemandInPCS": 2.53,
-      "ValueInIDR": 61261.26126126126
-    },
-    {
-      "Date": "2025-07-09",
-      "OriginID": "D42",
-      "DestinationID": "Bogor-Jawa Barat",
-      "ProductID": 7233,
-      "Type": "B2C",
-      "DemandInPCS": 5.06,
-      "ValueInIDR": 122522.52252252251
-    }
+  "datasets": [
+    "TransferCost.csv",
+    "STO.csv",
+    "ProductMaster.csv",
+    "LastMileB2BCost.csv",
+    "FirstMileCost.csv",
+    "FacilityMaster.csv",
+    "DailyDemand.csv",
+    "CustomerMaster.csv"
   ],
-  "description": "Compressed dataset for GitHub and AI analysis"
+  "excel_files": [
+    "FC_Investment_Parameters.xlsx",
+    "Data_Dictionary.xlsx",
+    "Case_Answer.xlsx"
+  ],
+  "documents": [
+    "[SCM26] ĐỀ ROUND 3.pdf"
+  ],
+  "language": "Python",
+  "main_script": "load_data.py",
+  "description": "Repository for storing datasets, documents, and utility scripts related to supply chain and logistics analysis."
 }
