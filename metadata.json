@@ -2,19 +2,51 @@
   "project_name": "Test2",
   "domain": "Supply Chain and Logistics",
   "repository": "https://github.com/tranaiminhthuyy-blip/Test2",
-  "storage": {
-    "type": "Google Drive",
-    "link": "https://drive.google.com/drive/folders/15cM6Z5eYqmUxqRdDTIkdYdjJrgPOwlMD?usp=sharing"
+  "dataset_distribution": {
+    "platform": "GitHub Releases",
+    "release_page": "https://github.com/tranaiminhthuyy-blip/Test2/releases"
   },
   "datasets": [
-    "TransferCost.csv",
-    "STO.csv",
-    "ProductMaster.csv",
-    "LastMileB2BCost.csv",
-    "FirstMileCost.csv",
-    "FacilityMaster.csv",
-    "DailyDemand.csv",
-    "CustomerMaster.csv"
+    {
+      "name": "TransferCost",
+      "file": "TransferCost.csv",
+      "type": "CSV"
+    },
+    {
+      "name": "STO",
+      "file": "STO.csv",
+      "type": "CSV"
+    },
+    {
+      "name": "ProductMaster",
+      "file": "ProductMaster.csv",
+      "type": "CSV"
+    },
+    {
+      "name": "LastMileB2BCost",
+      "file": "LastMileB2BCost.csv",
+      "type": "CSV"
+    },
+    {
+      "name": "FirstMileCost",
+      "file": "FirstMileCost.csv",
+      "type": "CSV"
+    },
+    {
+      "name": "FacilityMaster",
+      "file": "FacilityMaster.csv",
+      "type": "CSV"
+    },
+    {
+      "name": "DailyDemand",
+      "file": "DailyDemand.csv",
+      "type": "CSV"
+    },
+    {
+      "name": "CustomerMaster",
+      "file": "CustomerMaster.csv",
+      "type": "CSV"
+    }
   ],
   "excel_files": [
     "FC_Investment_Parameters.xlsx",
@@ -24,7 +56,7 @@
   "documents": [
     "[SCM26] ĐỀ ROUND 3.pdf"
   ],
-  "language": "Python",
   "main_script": "load_data.py",
-  "description": "Repository for storing datasets, documents, and utility scripts related to supply chain and logistics analysis."
+  "language": "Python",
+  "description": "Repository containing datasets and resources for supply chain and logistics analytics."
 }
